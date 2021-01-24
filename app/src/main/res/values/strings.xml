@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Tasks</string>
+    <string name="important_and_urgent"><![CDATA[Important & Urgent]]></string>
+    <string name="important_not_urgent"><![CDATA[Important & Not Urgent]]></string>
+    <string name="not_important_not_urgent"><![CDATA[Not Important & Not Urgent]]></string>
+    <string name="not_important_and_urgent"><![CDATA[Not Important & Urgent]]></string>
 </resources>
