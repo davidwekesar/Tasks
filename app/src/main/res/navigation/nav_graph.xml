@@ -19,5 +19,9 @@
         android:id="@+id/tasksFragment"
         android:name="com.awalideck.tasks.tasks.TasksFragment"
         android:label="TasksFragment"
-        tools:layout="@layout/fragment_tasks" />
+        tools:layout="@layout/fragment_tasks" >
+        <argument
+            android:name="quadNum"
+            app:argType="integer" />
+    </fragment>
 </navigation>
