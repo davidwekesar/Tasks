@@ -16,5 +16,14 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Quad number 4" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/add"
+        android:layout_margin="@dimen/margin_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add_24" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
