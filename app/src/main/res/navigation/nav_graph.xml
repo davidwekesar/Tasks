@@ -23,5 +23,14 @@
         <argument
             android:name="quadNum"
             app:argType="integer" />
+        <action
+            android:id="@+id/action_tasksFragment_to_addEditTaskFragment"
+            app:destination="@id/addEditTaskFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/addEditTaskFragment"
+        android:name="com.awalideck.tasks.addedittask.AddEditTaskFragment"
+        android:label="AddEditTaskFragment"
+        tools:layout="@layout/fragment_add_edit_task"/>
 </navigation>

@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.awalideck.tasks.R
 import com.awalideck.tasks.databinding.FragmentTasksBinding
 
 class TasksFragment : Fragment() {
@@ -22,6 +24,11 @@ class TasksFragment : Fragment() {
         val quadNum = TasksFragmentArgs.fromBundle(requireArguments()).quadNum
         val textView = binding.quadNumber
         textView.text = "Quadrant number: $quadNum"
+
+        binding.addFab.setOnClickListener {
+            val action = R.id.action_tasksFragment_to_addEditTaskFragment
+            this.findNavController().navigate(action)
+        }
 
         return binding.root
     }
