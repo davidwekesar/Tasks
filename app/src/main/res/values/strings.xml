@@ -5,4 +5,6 @@
     <string name="not_important_not_urgent"><![CDATA[Not Important & Not Urgent]]></string>
     <string name="not_important_and_urgent"><![CDATA[Not Important & Urgent]]></string>
     <string name="add">add</string>
+    <string name="done">done</string>
+    <string name="new_task">New task</string>
 </resources>
