@@ -3,26 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
-
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.awalideck.tasks.home.HomeFragment"
-        android:label="HomeFragment"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_tasksFragment"
-            app:destination="@id/tasksFragment" />
-    </fragment>
+    app:startDestination="@id/tasksFragment">
 
     <fragment
         android:id="@+id/tasksFragment"
         android:name="com.awalideck.tasks.tasks.TasksFragment"
         android:label="TasksFragment"
         tools:layout="@layout/fragment_tasks" >
-        <argument
-            android:name="quadNum"
-            app:argType="integer" />
         <action
             android:id="@+id/action_tasksFragment_to_addEditTaskFragment"
             app:destination="@id/addEditTaskFragment" />

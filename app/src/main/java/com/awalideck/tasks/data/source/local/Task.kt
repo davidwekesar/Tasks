@@ -1,13 +1,13 @@
-package com.awalideck.tasks.data.local
+package com.awalideck.tasks.data.source.local
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity
+@Entity(tableName = "tasks")
 data class Task(
     val task: String,
-    val isCompleted: Boolean
-) {
+    val isCompleted: Boolean,
+
     @PrimaryKey(autoGenerate = true)
-    val taskId: Int = 0
-}
+    var taskId: Long = 0L
+)
